@@ -39,19 +39,31 @@ const Mcbot =()=>{
 
     let getTopic=(e)=>{
         console.log("대화주제추천")
+        setMcplay(false)
+        setMcgame(false)
+        setMcmusic(false)
         setMctopic(!mctopic)
 
     }
     let getPlay=(e)=>{
         console.log("게임추천")
+        setMctopic(false)
+        setMcgame(false)
+        setMcmusic(false)
         setMcplay(!mcplay)
     }
     let helpGame=(e)=>{
         console.log("게임도와줘")
+        setMctopic(false)
+        setMcplay(false)
+        setMcmusic(false)
         setMcgame(!mcgame)
     }
     let playMusic=(e)=>{
         console.log("노래틀어줘")
+        setMctopic(false)
+        setMcplay(false)
+        setMcgame(false)
         setMcmusic(!mcmusic)
     }
    
